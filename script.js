@@ -4,9 +4,9 @@ function gerarArte(){
 let canvas = document.getElementById("canvas")
 let ctx = canvas.getContext("2d")
 
-// fundo roxo
-ctx.fillStyle = "#75529D"
-ctx.fillRect(0,0,1080,1080)
+// fundo branco
+ctx.fillStyle = "#FFFFFF"
+ctx.fillRect(0,0,1200,630)
 
 let input = document.getElementById("logoCliente")
 
@@ -20,7 +20,8 @@ let logoCliente = new Image()
 
 logoCliente.onload = function(){
 
-ctx.drawImage(logoCliente,140,440,350,200)
+// logo cliente (lado esquerdo)
+ctx.drawImage(logoCliente,150,215,350,200)
 
 }
 
@@ -33,11 +34,13 @@ reader.readAsDataURL(input.files[0])
 }
 
 // logo kikker
+
 let logoKikker = new Image()
 
 logoKikker.onload = function(){
 
-ctx.drawImage(logoKikker,590,440,350,200)
+// logo kikker (lado direito)
+ctx.drawImage(logoKikker,700,215,350,200)
 
 }
 
